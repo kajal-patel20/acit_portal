@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}Admin Portal | ACIT{% endblock %}
+
+{% block branding %}
+<div id="site-name">
+    <a href="{% url 'admin:index' %}" class="branding-link">
+        <img src="{% static 'logo.jpg' %}" alt="ACIT logo" class="site-logo">
+        <h1 class="site-title">ACIT Admin Portal</h1>
+    </a>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'admin_custom.css' %}">
+{% endblock %}
